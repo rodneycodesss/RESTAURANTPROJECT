@@ -1,4 +1,10 @@
-/* General animation for section titles */
+/* General dark mode styling */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Section titles animation */
 h1, h2, h3 {
   animation: fadeIn 2s ease-in-out;
 }
@@ -15,7 +21,7 @@ h1, h2, h3 {
   }
 }
 
-/* Animation for paragraphs */
+/* Paragraph animation */
 p {
   animation: slideIn 2s ease-in-out;
 }
@@ -32,44 +38,25 @@ p {
   }
 }
 
+/* Floating away effect for sections */
+.section {
+  opacity: 1;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.section.hidden {
+  transform: translateY(-50px); /* Float away upwards */
+  opacity: 0; /* Fade out */
+}
+
 /* Button hover effect */
 button {
+  background-color: #333333;
+  color: #ffffff;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 button:hover {
   transform: scale(1.1);
-  background-color: #555555;
-}
-
-/* Highlight section animation */
-.highlight-description h3 {
-  animation: zoomIn 1.5s ease-in-out;
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-/* Footer text animation */
-footer p {
-  animation: fadeInUp 2s ease-in-out;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background-color: #444444;
 }
