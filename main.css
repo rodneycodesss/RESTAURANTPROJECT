@@ -49,14 +49,30 @@ p {
   opacity: 0; /* Fade out */
 }
 
-/* Button hover effect */
+/* General button styling */
 button {
-  background-color: #333333;
-  color: #ffffff;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #444444; /* Dark background for buttons */
+  color: #ffffff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px; /* Add padding for a refined look */
+  font-size: 16px; /* Increase font size for readability */
+  font-weight: bold; /* Make text bold */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Hover effect for buttons */
 button:hover {
-  transform: scale(1.1);
-  background-color: #444444;
+  background-color: #555555; /* Slightly lighter background on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active button effect */
+button:active {
+  background-color: #333333; /* Darker background when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+  transform: translateY(0); /* Reset lift effect */
 }
