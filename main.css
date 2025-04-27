@@ -251,3 +251,25 @@ footer .list-unstyled li a i {
 footer .list-unstyled li a:hover {
   color: #ff5722;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 80px; 
+  margin-top: 20px;
+}
+
+.social-link {
+  color: #ffffff;
+  font-size: 2.5rem; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.social-link:hover {
+  color: #ff5722; 
+  transform: scale(1.3) rotate(10deg); 
+}
+
+.social-link:active {
+  transform: scale(1.2) rotate(-10deg); 
+}

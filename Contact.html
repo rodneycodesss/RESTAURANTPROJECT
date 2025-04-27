@@ -65,14 +65,67 @@
       </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb row">
-      <a href="index.html">Home</a>
-      <div class="separator">/</div>
-      <a href="">Menu</a>
-    </div>
-
-    <main class="container">
+    <!-- Contact Us Section -->
+    <section class="row mt-5">
+      <div class="col-12">
+        <h2 class="text-center">We Value Your Feedback</h2>
+        <p class="text-center">Please let us know how we can improve our services.</p>
+        <form action="#" method="POST" class="p-4 bg-white shadow rounded">
+          <div class="form-group row">
+            <label for="name" class="col-3">Name</label>
+            <input
+              type="text"
+              class="form-control col-9"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group row mt-3">
+            <label for="email" class="col-3">Email</label>
+            <input
+              type="email"
+              class="form-control col-9"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group row mt-3">
+            <label for="rating" class="col-3">Rating</label>
+            <select class="form-control col-9" name="rating" id="rating" required>
+              <option value="" disabled selected>Rate us</option>
+              <option value="5">Excellent</option>
+              <option value="4">Very Good</option>
+              <option value="3">Good</option>
+              <option value="2">Fair</option>
+              <option value="1">Poor</option>
+            </select>
+          </div>
+          <div class="form-group row mt-3">
+            <label for="comments" class="col-3">Comments</label>
+            <textarea
+              class="form-control col-9"
+              name="comments"
+              id="comments"
+              rows="4"
+              placeholder="Share your feedback"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group row mt-4">
+            <div class="col-3"></div>
+            <div class="col-9">
+              <button type="submit" class="btn btn-primary w-100">Submit Feedback</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+      
+     <main class="container">
       <h1>Contact Us</h1>
 
       <div class="underline"></div>
@@ -111,73 +164,10 @@
         />
         </div>
       </section>
-
-      <!-- Feedback Form-->
-      <section class="container box">
-        <h2>Send us your feedback</h2>
-        <form>
-          <div class="form-control row">
-            <label for="first-name" class="col-3">First Name</label>
-            <input
-              type="text"
-              class="form-input col-6"
-              name="first-name"
-              id="first-name"
-            />
-          </div>
-
-          <div class="form-control row">
-            <label for="last-name" class="col-3">Last Name</label>
-            <input
-              type="text"
-              class="form-input col-6"
-              name="last-name"
-              id="last-name"
-            />
-          </div>
-
-          <div class="form-control row">
-            <label for="email" class="col-3">Email</label>
-            <input
-              type="email"
-              class="form-input col-6"
-              name="email"
-              id="email"
-            />
-          </div>
-
-          <div class="form-control row">
-            <label for="tel" class="col-3">Tel.</label>
-            <input type="tel" class="form-input col-6" name="tel" id="tel" />
-          </div>
-          <div class="form-control row">
-            <label for="message" class="col-3">Message</label>
-            <textarea
-              cols="15"
-              rows="4"
-              class="form-input col-6"
-              name="message"
-              id="message"
-            >
-            </textarea>
-          </div>
-          <div class="form-control row">
-            <div class="col-3"></div>
-            <div class="col-6">
-              <input
-                type="submit"
-                class="btn bg-primary"
-                name="submit"
-                value="Send"
-                id="submit"
-              />
-            </div>
-          </div>
-        </form>
-      </section>
     </main>
 
     <hr />
+   
 
     <!-- Footer -->
     <footer class="container-fluid">
@@ -207,6 +197,19 @@
           <p>Tel: <a href="tel:+254780482290"> +254780482290</a></p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-12 align-self-center">
+          <p class="text-center">Follow us on:</p>
+          <a href="https://www.facebook.com/kienyejimama" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com/kienyejimama" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/kienyejimama/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
 
       <div class="row">
         <div class="col-12 align-self-center">
