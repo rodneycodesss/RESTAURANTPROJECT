@@ -235,7 +235,7 @@ footer .list-unstyled li {
 
 footer .list-unstyled li a {
   text-decoration: none;
-  color: #333;
+  color: #f9f9fc;
   font-size: 1rem;
   display: flex;
   align-items: center;
